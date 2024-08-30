@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailInfoFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/logoInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/forksTextView"
+            android:layout_width="342dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/starsTextView"
+            android:layout_width="342dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forksTextView" />
+
+        <TextView
+            android:id="@+id/watchersTextView"
+            android:layout_width="342dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/urlTextView" />
+
+        <TextView
+            android:id="@+id/urlTextView"
+            android:layout_width="342dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/starsTextView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/licenseTextView"
+            android:layout_width="342dp"
+            android:layout_height="80dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/watchersTextView"
+            app:layout_constraintVertical_bias="0.176" />
+
+        <TextView
+            android:id="@+id/readmeTextView"
+            android:layout_width="342dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/licenseTextView"
+            app:layout_constraintVertical_bias="0.09" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="64dp"
+            android:layout_height="31dp"
+            android:background="@color/black"
+            android:src="@drawable/arrow_back_24"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
